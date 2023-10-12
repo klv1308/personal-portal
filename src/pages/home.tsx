@@ -1,5 +1,5 @@
 export function Home(){
     return(
-        <h2>Home page</h2>
+        <h2>Hello Kotik!</h2>
     )
 }
