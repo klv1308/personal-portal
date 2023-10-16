@@ -1,5 +1,5 @@
 import Box from "@mui/material/Box";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import dayjs, { Dayjs } from "dayjs";
 import {
   Card,
@@ -22,7 +22,7 @@ interface Schedule {
 }
 
 export function Calendar() {
-  const [scedule, setScedule] = useState<Schedule>();
+  //const [scedule, setScedule] = useState<Schedule>();
   useEffect(() => {
     var now = dayjs();
 
@@ -45,7 +45,7 @@ export function Calendar() {
       ],
     };
     localStorage.setItem("medicationSchedule", JSON.stringify(obj));
-    setScedule(obj);
+    //setScedule(obj);
   }, []);
 
   return (
